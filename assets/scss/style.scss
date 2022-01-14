@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pushster&display=swap");
+
+$mainFont: "Poppins", sans-serif;
+$logoFont: "Pushster", sans-serif;
+$blueColor: #4285f4;
+$greenColor: #43a853;
+$yellowColor: #fbbc05;
+$redColor: #ea4335;
+$blkColor: #2e2e2e;
+$bgColor: #edf0f1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $mainFont;
+  scroll-behavior: smooth;
+}
+body {
+  background: $bgColor;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  & nav {
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      &:nth-child(1) {
+        color: #fff;
+        background: $blueColor;
+      }
+      &:nth-child(2) {
+        color: #fff;
+        background: $greenColor;
+      }
+      &:nth-child(3) {
+        color: #fff;
+        background: $yellowColor;
+      }
+      &:nth-child(4) {
+        color: #fff;
+        background: $redColor;
+      }
+      &:nth-child(5) {
+        color: #fff;
+        background: $blkColor;
+      }
+      &:hover {
+        background: #121212;
+      }
+    }
+  }
+  & header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    & .logo {
+      align-items: center;
+      & a {
+        font-size: 2vw;
+        font-weight: bold;
+        font-family: $logoFont;
+        color: $blkColor;
+        & .fa-angle-left {
+          color: $blueColor;
+        }
+        & .fa-angle-right {
+          color: $yellowColor;
+        }
+      }
+    }
+  }
+  & main > div {
+    width: 100%;
+    min-height: 100vh;
+  }
+  & main {
+    padding: 0 50px;
+    & .info {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      & .txt {
+        width: 60%;
+        text-align: left;
+        & h1 {
+          font-family: $logoFont;
+          font-size: 55px;
+        }
+        & h4 {
+          font-family: $logoFont;
+          font-size: 40px;
+        }
+        & span {
+          font-family: $logoFont;
+          color: $blueColor;
+        }
+        & p {
+          font-size: 1.35vw;
+        }
+        & button {
+          width: 200px;
+          height: 50px;
+          background: $blueColor;
+          margin-top: 20px;
+          border: none;
+          outline: none;
+          color: $bgColor;
+          font-size: 20px;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: 0.4s ease;
+          &:hover {
+            background: #121212;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+      & img {
+        width: 30%;
+        border-radius: 50%;
+        box-shadow: 0 10px 7px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+  & .exp {
+    padding: 10px 50px;
+    & .container {
+      margin-top: 20px;
+      & hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      & h1 {
+        font-family: $logoFont;
+        color: $greenColor;
+      }
+      & .item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        text-align: left;
+        margin-top: 50px;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        & h1 {
+          font-family: $mainFont;
+          color: $blkColor;
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+        & h5 {
+          color: $blkColor;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        & p {
+          color: $blkColor;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        & a {
+          text-decoration: underline;
+          color: $greenColor;
+          font-size: 18px;
+          margin-bottom: 20px;
+          width: 150px;
+        }
+      }
+    }
+  }
+  & .edu {
+    padding: 10px 50px;
+    & .container {
+      margin-top: 20px;
+      & hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      & h1 {
+        font-family: $logoFont;
+        color: $yellowColor;
+      }
+      & .item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        text-align: left;
+        margin-top: 50px;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        & h1 {
+          font-family: $mainFont;
+          color: $blkColor;
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+        & h5 {
+          color: $blkColor;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        & p {
+          color: $blkColor;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        & a {
+          text-decoration: underline;
+          color: $yellowColor;
+          font-size: 18px;
+          margin-bottom: 20px;
+          width: 150px;
+        }
+      }
+    }
+  }
+  & .skills {
+    padding: 10px 50px;
+    & .container {
+      margin-top: 20px;
+      & hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      & h1 {
+        font-family: $logoFont;
+        color: $redColor;
+      }
+      .item-container {
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        & h3 {
+          font-family: $logoFont;
+          color: $redColor;
+          font-size: 25px;
+          margin-bottom: 20px;
+        }
+        & p {
+          color: $blkColor;
+          font-size: 18px;
+          margin-top: 20px;
+        }
+        & .container {
+          width: 100%;
+          background: $blkColor;
+        }
+
+        .skills {
+          border-radius: 30px;
+          text-align: right;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: $redColor;
+        }
+
+        .html {
+          width: 90%;
+          background-color: #c1c1c1;
+        }
+        .css {
+          width: 80%;
+          background-color: #c1c1c1;
+        }
+        .js {
+          width: 70%;
+          background-color: #c1c1c1;
+        }
+        .bs {
+          width: 60%;
+          background-color: #c1c1c1;
+        }
+        .react {
+          width: 65%;
+          background-color: #c1c1c1;
+        }
+        .jq {
+          width: 55%;
+          background-color: #c1c1c1;
+        }
+        .adobe {
+          width: 70%;
+          background-color: #c1c1c1;
+        }
+        .adobe {
+          width: 70%;
+          background-color: #c1c1c1;
+        }
+        .xd {
+          width: 75%;
+          background-color: #c1c1c1;
+        }
+        .figma {
+          width: 75%;
+          background-color: #c1c1c1;
+        }
+        .trouble {
+          width: 100%;
+          background-color: #c1c1c1;
+        }
+        .fwe {
+          width: 100%;
+          background-color: #c1c1c1;
+        }
+        .burmese {
+          width: 100%;
+          background-color: #c1c1c1;
+        }
+        .english {
+          width: 75%;
+          background-color: #c1c1c1;
+        }
+        & .items {
+          padding: 10px 10px;
+          & h3 {
+            color: $blkColor;
+            font-family: $mainFont;
+            font-size: 20px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+  & .contact {
+    min-height: 60vh;
+    padding: 10px 50px;
+    & .container {
+      margin-top: 20px;
+      & hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      & h1 {
+        font-family: $logoFont;
+        font-size: 30px;
+        color: $blkColor;
+      }
+      & h3 {
+        font-family: $logoFont;
+        font-size: 30px;
+        color: $blkColor;
+      }
+      & p {
+        font-size: 20px;
+        color: $blkColor;
+      }
+      & .item-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        & a {
+          font-size: 40px;
+          cursor: pointer;
+          transition: 0.4s ease;
+          &:nth-child(1) {
+            color: $blueColor;
+          }
+          &:nth-child(2) {
+            color: $greenColor;
+          }
+          &:nth-child(3) {
+            color: $yellowColor;
+          }
+          &:nth-child(4) {
+            color: $redColor;
+          }
+          &:nth-child(5) {
+            color: $blkColor;
+          }
+          &:nth-child(6) {
+            color: $blueColor;
+          }
+          &:hover {
+            color: #121212;
+            text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+    }
+  }
+  & footer {
+    width: 100%;
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    & span {
+      font-size: 20px;
+      letter-spacing: 5px;
+      color: $bgColor;
+    }
+  }
+}
+
+@media screen and (max-width: 789px) {
+  body {
+    position: relative;
+    & header {
+      & .logo {
+        & a {
+          font-size: 6.5vw;
+        }
+      }
+    }
+    & main > div {
+      padding: 0 0;
+    }
+    & main {
+      padding: 0 15px;
+      & .info {
+        flex-direction: column-reverse;
+        & .txt {
+          width: 100%;
+          & h1 {
+            font-size: 40px;
+          }
+          & h4 {
+            font-size: 28px;
+          }
+          & p {
+            font-size: 18px;
+          }
+        }
+        & img {
+          margin-top: 10px;
+          width: 250px;
+          margin-bottom: 50px;
+        }
+      }
+      & .contact {
+        & a {
+          & i {
+            margin-left: 10px;
+            font-size: 30px;
+          }
+        }
+      }
+      & .exp,
+      .edu,
+      .skills,
+      .contact {
+        padding: 0;
+      }
+    }
+    & footer {
+      margin-bottom: 50px;
+      & span {
+        font-size: 18px;
+      }
+    }
+    & nav {
+      position: fixed;
+      width: 100%;
+      overflow: hidden;
+      z-index: 3;
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
